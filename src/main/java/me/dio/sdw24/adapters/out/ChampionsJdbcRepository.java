@@ -21,6 +21,7 @@ public class ChampionsJdbcRepository implements ChampionsRepository {
         this.rowMapper = (rs, rowNum) -> new Champions(
                 rs.getLong("id"),
                 rs.getString("name"),
+
                 rs.getString("role"),
                 rs.getString("lore"),
                 rs.getString("image_url")
